@@ -1,0 +1,149 @@
+
+@font-face {
+    font-weight: 200;
+    font-family: 'San Francisco Light';
+    src:url(../fonts/SF-Pro-Display-Light.otf);
+}
+
+@font-face {
+    font-family: 'San Francisco Text';
+    source:url("../fonts/SF-Pro-Text-Light.otf");
+}
+
+@font-face {
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'San Francisco Bold';
+    src:url(../fonts/SF-Pro-Display-Bold.otf);
+}
+
+html, body {
+    /* background: linear-gradient(#0097ff, #007dff); */
+    background: #007dff;
+    height: 100%;
+    min-height: 700px;
+    width: 100%;
+    color: #353535;
+    font-family: 'San Francisco Text', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-content {
+    width: 100%;
+}
+
+.logo {
+    width: 154px;
+    margin-bottom: 2.5rem;
+}
+
+.main-card {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em 0;
+    border-radius: 8px;
+    width: 70%;
+    box-shadow: 0 30px 66px 0 rgba(0,0,0,.2);
+    height: 80%;
+}
+
+.welcome-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.welcome-message {
+  color: #353535;
+}
+
+.welcome-header{
+    font-family: "San Francisco Light", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: .5rem auto .65rem;
+}
+
+.welcome-text {
+  font-weight: 200;
+  margin-top: 0;
+  font-size: 1.1rem;
+    max-width: 340px;
+}
+
+.start {
+    background-color: #007dff;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    width: 13.25rem;
+    font-size: 1.3rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    font-family: 'San Francisco Bold', sans-serif;
+    margin-top: 2.5rem;
+}
+
+.opt-out {
+    color: #007dff;
+    margin-top: 1.2rem;
+}
+
+.welcome-img {
+    width: 85%;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    html, body {
+        background-color: #fff;
+    }
+    .main-card {
+        box-shadow: none;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    .welcome-img {
+        margin: 3rem auto 1rem;
+        width: 100%;
+        max-width: 340px;
+    }
+    .logo {
+        margin-bottom: 2rem;
+    }
+    .start {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .opt-out {
+        text-align: center;
+    }
+    .main-card {
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .main-card {
+        width: 90%;
+    }
+
+}
