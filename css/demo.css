@@ -46,7 +46,7 @@ html, body {
 }
 
 body {
-	background: linear-gradient(#0097ff, #007dff);
+	/*background: linear-gradient(#0097ff, #007dff);*/
 	color: #4a4a4a;
 	font-weight: 100;
 	font-size: 1em;
@@ -68,40 +68,7 @@ a:hover, a:focus {
 	color: #fff;
 }
 
-.form-card-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-}
 
-.form-card {
-    background-color: #fff;
-    width: 95%;
-    height: 90%;
-    position: absolute;
-    z-index: -1;
-    border-radius: 8px;
-    box-shadow: 0 30px 66px 0 rgba(0,0,0,.2);
-}
-
-.form-section {
-    display: flex;
-    width: 95%;
-    height: 100%;
-    margin-top: 20%;
-}
-
-.left-col {
-    width: 400px;
-
-}
-.right-col {
-    margin-left: 50px;
-}
 
 /* Top Navigation Style */
 
@@ -826,4 +793,107 @@ section {
         animation-timing-function: ease-in;
         transform: translateY(198px);
     }
+}
+
+
+html, body {
+
+    height: 100%;
+    min-height: 700px;
+    width: 100%;
+    color: #353535;
+    font-family: 'San Francisco Text', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.welcome-content {
+    width: 100%;
+}
+
+.logo {
+    width: 154px;
+    margin-bottom: 2.5rem;
+}
+
+
+
+.welcome-message {
+    color: #353535;
+}
+
+.welcome-header{
+    font-family: "San Francisco Light", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: .5rem auto .65rem;
+}
+
+.welcome-text {
+    font-weight: 200;
+    margin-top: 0;
+    font-size: 1.1rem;
+    max-width: 340px;
+}
+
+.start {
+    background-color: #007dff;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    width: 13.25rem;
+    font-size: 1.3rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    font-family: 'San Francisco Bold', sans-serif;
+    margin-top: 2.5rem;
+}
+
+.opt-out {
+    color: #007dff;
+    margin-top: 1.2rem;
+}
+
+.welcome-img {
+    width: 85%;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    html, body {
+        background-color: #fff;
+    }
+    .main-card {
+        box-shadow: none;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    .welcome-img {
+        margin: 3rem auto 1rem;
+        width: 100%;
+        max-width: 340px;
+    }
+    .logo {
+        margin-bottom: 2rem;
+    }
+    .start {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .opt-out {
+        text-align: center;
+    }
+    .main-card {
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .main-card {
+        width: 90%;
+    }
+
 }

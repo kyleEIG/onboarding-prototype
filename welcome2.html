@@ -7,27 +7,196 @@
   <title>Welcome to Hostgator </title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
-  <section class="main-card">
-  <div class="container">
-      <div class="row welcome-content">
-        <div class="col-md welcome-col order-2 order-md-1">
-          <div class="welcome-message">
-            <img class="logo" src="img/hg-logo.svg" />
-            <h1 class="welcome-header">Welcome, Karen!</h1>
-            <p class="welcome-text">There are many ways to build a website. By answering a few simple questions, we’ll recommend the one that’s right for you.</p>
-            <button class="start">LET'S GO!</button>
-            <p class="opt-out">No thanks, I'm a web designer</p>
-          </div>
-        </div>
-        <div class="col-md welcome-col col-right order-1 order-md-2">
-          <img class="img-responsive welcome-img" src="img/welcome-img.svg">
+    <div class="container card-container">
+      <div class="progress-header" id="progress-bar">
+        <img id="logo" class="logo" src="img/hg-logo.svg">
+        <div class="prog-bar">
+          <div id="first" class="circle heart"><img id="check-one" class="check" src="img/check.svg"><p id="one" class="number">1</p><p class="progress-label">Website</p></div>
+          <div id="full-bar" class="full-bar"></div>
+          <div class="bar"></div>
+          <div id="second" class="circle "><img id="check-two" class="check" src="img/check.svg"><p id="two" class="number">2</p><p class="progress-label">Experience</p></div>
+          <div class="bar"></div>
+          <div id="third" class="circle"><p id="three" class="number">3</p><p class="progress-label">Recommendation</p></div>
         </div>
       </div>
-  </div>
-  </section>
+
+  <!--    <div class="row welcome-content" id="welcome">
+        <div class="col-md welcome-col order-2 order-md-1">
+          <div class="welcome-message">
+            <img class="welcome-logo" src="img/hg-logo.svg" />
+            <h1 class="welcome-header">Welcome, Karen!</h1>
+            <p class="welcome-text">There are many ways to build a website. By answering a few simple questions, we’ll recommend the one that’s right for you.</p>
+            <button class="start" id="start">LET'S GO!</button>
+            <p class="opt-out">No thanks, I'm a web designer</p>
+            </div>
+          </div>
+          <div class="col-md welcome-col col-right order-1 order-md-2">
+            <img class="img-responsive welcome-img" src="img/welcome-img.svg">
+          </div>
+        </div>
+
+      <div class="container question-section" id="question-one">
+        <h2 class="question">What kind of site are you making?</h2>
+        <div class="row options">
+          <div class="col-md option">
+            <div class="option-img">
+              <img src="img/website.svg">
+            </div>
+            <div class="option-content">
+              <h4>Website</h4>
+              <p class="option-text">Bring your website to life.</p>
+              <div class="option-cta answer-one" id="q1a">Choose</div>
+            </div>
+          </div>
+          <div class="col-md option">
+            <div class="option-img">
+              <img class="img-responsive" src="img/online-store.svg">
+            </div>
+            <div class="option-content">
+              <h4>Online Store</h4>
+              <p class="option-text">Sell your products online.</p>
+              <div class="option-cta answer-one" id="q1b">Choose</div>
+            </div>
+          </div>
+          <div class="col-md option">
+            <div class="option-img">
+              <img src="img/blog.svg">
+            </div>
+            <div class="option-content">
+              <h4>Blog</h4>
+              <p class="option-text">Tell your story to the world.</p>
+              <div class="option-cta answer-one" id="q1c">Choose</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container question-section" id="question-two">
+        <h2 class="question">How comfortable are you with making websites?</h2>
+        <div class="row options">
+          <div class="col-md option" id="beginner">
+            <div class="option-img beg-bg">
+              <img src="img/beginner.svg">
+            </div>
+            <div class="option-content">
+              <h4>Beginner</h4>
+              <p class="option-text">I’ve never made a website in my life.</p>
+              <div class="option-cta" id="q2a">Choose</div>
+            </div>
+          </div>
+          <div class="col-md option" id="intermediate">
+            <div class="option-img int-bg">
+              <img class="img-responsive" src="img/intermediate.svg">
+            </div>
+            <div class="option-content">
+              <h4>Intermediate</h4>
+              <p class="option-text">I have made a couple of websites.</p>
+              <div class="option-cta" id="q2b">Choose</div>
+            </div>
+          </div>
+          <div class="col-md option" id="expert">
+            <div class="option-img exp-bg">
+              <img src="img/expert.svg">
+            </div>
+            <div class="option-content">
+              <h4>Expert</h4>
+              <p class="option-text">I am a web pro - I’ve made many websites.</p>
+              <div class="option-cta" id="q2c">Choose</div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="recommendation-one">
+      <div>
+				<div class="gator">
+
+					<div class="gator-nav" id="gator-nav">
+						<div class="gator-nav-box"></div>
+						<div class="gator-nav-box"></div>
+						<div class="gator-nav-box"></div>
+					</div>
+					<div class="template-column col-1">
+						<div class="column-image blue"></div>
+						<div class="column-text"></div>
+						<div class="column-text"></div>
+						<div class="column-text"></div>
+					</div>
+					<div class="template-column col-2">
+						<div class="column-image green"></div>
+						<div class="column-text"></div>
+						<div class="column-text"></div>
+						<div class="column-text"></div>
+					</div>
+					<div class="template-column col-3">
+						<div class="column-image yellow"></div>
+						<div class="column-text"></div>
+						<div class="column-text"></div>
+						<div class="column-text"></div>
+					</div>
+					<div class="gator-sidebar" id="sidebar">
+						<div class="gator-element-outline">
+							<div class="gator-element gray"></div>
+						</div>
+						<div class="gator-element-outline">
+							<div class="gator-element red"></div>
+						</div>
+						<div class="gator-element-outline">
+							<div class="gator-element yellow"></div>
+						</div>
+						<div class="gator-element-outline">
+							<div class="gator-element green"></div>
+						</div>
+						<div class="gator-element-outline">
+							<div class="gator-element blue"></div>
+						</div>
+						<div class="gator-element-outline">
+							<div class="gator-element purple"></div>
+						</div>
+					</div>
+					<div class="gator-element draggable-element red" id="draggable"></div>
+					<div id="drag-wrapper" id="drag-wrapper">
+						<div class="gator-element draggable-element-two yellow" id="draggable-two"></div>
+					</div>
+					<div class="gator-main">
+						<p class="gator-text" id="gator-text">GATOR</p>
+						<div class="gator-white-box-two" id="white-box-two">
+							<div class="template-row">
+								<div class="template-text-box">
+									<div class="template-text"></div>
+									<div class="template-text"></div>
+									<div class="template-text"></div>
+									<div class="template-text"></div>
+									<div class="template-text"></div>
+								</div>
+								<div class="template-image"></div>
+							</div>
+						</div>
+						<img class="template-image-details" id="details" src="img/photo.svg">
+						<div class="gator-white-box" id="white-box">
+							<p class="gator-sub-text" id="gator-sub-text">Get Started</p>
+							<div class="gator-template" id="red-box"></div>
+							<div class="gator-template" id="green-box"></div>
+							<div class="gator-template" id="purple-box"></div>
+							<div class="gator-template" id="green-box-two"></div>
+							<div class="gator-template" id="yellow-box"></div>
+							<div class="gator-template" id="red-box-two"></div>
+							<div class="gator-template" id="blue-box-two"></div>
+							<div class="gator-template" id="purple-box-two"></div>
+							<div class="gator-template" id="blue-box"></div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+      </div>
+    </div>
+  <script src="js/onboarding.js"></script>
+  <script src="js/animate.js"></script>
 </body>
 
 </html>
